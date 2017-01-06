@@ -1,0 +1,46 @@
+.container {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  height: 75px;
+}
+
+.text {
+  width: 250px;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#message {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+nav {
+  margin-bottom: 40px!important;
+}
+
+.navbar-inverse {
+  background-color: rgb(255,255,255)!important;
+  border: 1px solid rgb(180,180,180)!important;
+  color: rgb(180,180,180);
+  border-radius: 0px!important;
+  font-size: 20px;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: rgb(255,255,255)!important;
+  color: rgb(180,180,180)!important;
+  border: 1px solid rgb(180,180,180)!important;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: rgb(180,180,180)!important;
+}
+
+button {
+  height: 50px;
+  width: 120px;
+  font-size: 20px!important;
+}

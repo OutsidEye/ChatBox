@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chatBox">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <title>Chatbox</title>
+</head>
+
+<body>
+    <div class="container" ng-controller="TabController as tabs">
+        <h1>ChatBox</h1>
+
+<nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+            <li class="active"  ng-class={active:tabs.isSet(1)}><a href="#" ng-click="tabs.setTab(1)">Connexion</a></li>
+            <li ng-class={active:tabs.isSet(2)}><a href="#" ng-click="tabs.setTab(2)">Inscription</a></li>
+        </ul>
+</nav>
+
+
+        <div ng-show="tabs.isSet(1)">
+            <input type="text" placeholder="Pseudo" class="text" required /> </br>
+            <input type="text" placeholder="Mot de passe" class="text" required /> </br>
+
+            <button type="button" class="btn btn-default">Connexion</button>
+        </div>
+
+
+        <div ng-show="tabs.isSet(2)">
+            <input type="text" placeholder="Pseudo" class="text" required autofocus /> </br>
+            <input type="text" placeholder="Mot de passe" class="text" required /> </br>
+
+            <button type="button" class="btn btn-default">Inscription</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
